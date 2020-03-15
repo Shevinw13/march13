@@ -1,121 +1,62 @@
+<!-- CSS Stylesheets with Relative Paths -->
+
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Shevin Weinstein</title>
+  <meta charset="UTF-8">
+  <title>Shevin Weinstein</title>
 
-  
-    <!-- Introducing the Style Tag! -->
-    <!-- ========================== -->
-  
-    <!-- Now you can customize the look of your sites. Each rule in the style tag changes the appearance of its associated element (notice how each rule names an element from the HTML body). -->
-    <style>
-      /*
-              NOTE: Commenting is a bit different in CSS. 
-            They start with forward-slash + asterisk 
-            and end with back-slash + asterisk.
-            */
-      /* h1 heading tag */
-      
-      h1 {
-        /* Put a 15-pixel margin at the bottom of the heading. */
-        margin-bottom: 15px;
-        /* Change the size of your font to 60 pixels high. */
-        font-size: 60px;
-        /* This will color the heading font white. */
-        color: orange;
-        /* Align the text to the center of its enclosing element (e.g. div). */
-        text-align: center;
-        /* The background of the heading element will now be black. */
-        background-color: black;
-      }
-      /* h2 heading tags */
-      
-      h2 {
-        /* Put a 15-pixel margin at the top of all h2 headings. */
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 40px;
-        text-align: center;
-      }
-      /* h3 heading tags */
-      
-      h3 {
-        font-size: 20px;
-        text-align: center;
-      }
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-      h5 {
-        font-size: 20px;
-        text-align: center;
-      }
-      /* All img tags */
-      
-      img {
-        /* 
-                  Center a block element in the middle of its enclosing tag.
-                  When you use the "auto" rule on both left and right margins, 
-                  your browser will do the math necessary to center a block element.
-                  */
-        margin-left: auto;
-        margin-right: auto;
-        /* Block display (more on this later) */
-        display: block;
-      }
-      /* All p tags */
-      
-      p {
-        text-align: center;
-        font-size: 20px;
-        /* Bold the text. */
-        font-weight: bold;
-      }
-      /* All unordered list tags */
-      
-      ul {
-        text-align: center;
-        font-size: 15px;
-        /* Give an element a solid border. */
-        border-style: solid;
-        /* Render the border 5 pixels thick. */
-        border-width: 5px;
-        /* Include bullets in the content flow. */
-        /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
-        list-style-position: inside;
-      }
-    </style>
 </head>
 
 <body>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
-  <!-- Header -->
-  <h1>Shevin Weinstein</h1>
+  <div class="container">
 
-  <h2> Here is some info about me </h2>
+    <section id="main-bio">
 
-  <!-- Image -->
-  <img src="ShevinPic.jpeg" alt="SHEVIN!" />
-  <br>
-  <br>
-  <!-- Link with New Tab -->
-  <h5>
-  <a href="https://www.linkedin.com/in/shevinweinstein/" target="_blank">Visit my LinkedIn page</a>
-  <br>
-  <br>
-  <!-- Bold Link -->
- <a href="https://www.youtube.com">This is a link to youtube</a>
- </h5>
-  <br>
-  <br>
-<p>This is a page to showcase my HTML learnings</p>
+      <h2>Shevin Weinstein</h2>
 
-<h3>Contact Info</h3>
-<ul>
-   <li> <strong>Email:</strong> Shevinweinstein1@gmail.com</li>
-   <li> <strong>Github URL:</strong> https://github.com/Shevinw13</li>
-</ul>
+      <img id="bio-image" src="ShevinPic.jpeg" Shevin Weinstein>
 
+      <p>Shevin is a hardworking, motivated young professional with a passion for people and technology. While demonstrating a thorough understanding of Product Management and Agile methodologies, he eagerly utilizes his education and technical experience to make a positive impact on the corporate world and the community around him.</p>
+    </section>
+
+    <section id="contact-info">
+      <h2>Personal Info</h2>
+      <ul>
+        <li> <strong>Email:</strong> Shevinweinstein1@gmail.com</li>
+        <li> <strong>Github URL:</strong> https://github.com/Shevinw13</li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </section>
+
+<section class="form">
+    <h2>Contact me:</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="..."><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="..."><br><br>
+      <label for="message">Message</label><br>
+      <input type="text" id="message" name="message" value="..."><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</div>
 </body>
 
+
 </html>
+
+  
